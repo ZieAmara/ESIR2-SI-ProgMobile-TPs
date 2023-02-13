@@ -14,11 +14,22 @@ Vous êtes capable de télécharger, d'installer et de mettre à jour des logici
 
 ### Points abordés
 
-Vérifier que la configuration de votre ordinateur correspond à la configuration minimale requise pour exécuter Android Studio.
+- Vérifier que la configuration de votre ordinateur correspond à la configuration minimale requise pour exécuter Android Studio.
 
-Télécharger et installer l'outil Android Studio.
+- Télécharger et installer l'outil Android Studio.
 
 ### Ce dont vous avez besoin
 
 Un ordinateur exécutant une version 64 bits de Windows (8, 10 ou 11), Linux, macOS (10.14 Mojave ou version ultérieure) ou Chrome OS.
 Un ordinateur connecté à Internet.
+
+## HELLO WORLD ! :
+
+### Points abordés
+
+- Comment créer une application Android avec Android Studio
+- Comment exécuter des applications avec l'outil de prévisualisation d'Android Studio
+- Comment mettre à jour du texte avec Kotlin
+- Comment mettre à jour une interface utilisateur (UI) avec Jetpack Compose
+- Comment afficher un aperçu de votre application dans Jetpack Compose
+
