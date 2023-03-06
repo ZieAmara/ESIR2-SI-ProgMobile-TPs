@@ -11,9 +11,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.datastorage.ui.theme.DataStorageTheme
+import java.io.File
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // déclaration des variables
+        val context = applicationContext
+        val filename = "tape_traoré"
+
         super.onCreate(savedInstanceState)
         setContent {
             DataStorageTheme {
@@ -22,16 +28,21 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Greeting("${context.filesDir} ")
                 }
             }
         }
+
+        // créer un fichier dans l'espace de stockage spécifique de l'application
+        val file = File(this.getExternalFilesDir(null), filename)
+        file.createNewFile()
+
     }
 }
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+    Text(text = "$name")
 }
 
 @Preview(showBackground = true)
